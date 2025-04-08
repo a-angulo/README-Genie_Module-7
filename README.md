@@ -1,7 +1,7 @@
 # 🎉 README Genie 🧞‍♂️ -  Module 7-READ-ME-Generator
 
 **Your Wish for a Perfect README... Granted!**
-![license-badge](license-badge)
+![license-badge](https://img.shields.io/badge/License-MIT-yellow.svg)
 ## 📚 Table of Contents
 - 📝 [Description](#description)  
 - 💾 [Installation](#installation)  
@@ -39,7 +39,7 @@ To test the magic:
 2. 💻 Run `npm install` to install the Inquirer module  
 3. 🧞‍♂️ Execute the command `node index.js` and watch the README appear like magic!
 
-📹 Need a guide? Check out this [video walkthrough](walkthrough)!
+📹 Need a guide? Check out this [walkthrough](insert link)!
 
 ---
 
