@@ -1,6 +1,7 @@
 # 🎉 README Genie 🧞‍♂️ -  Module 7-READ-ME-Generator
 
 **Your Wish for a Perfect README... Granted!**
+---
 ##![license-badge](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ---
