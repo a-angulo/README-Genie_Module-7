@@ -3,6 +3,8 @@
 **Your Wish for a Perfect README... Granted!**
 ##![license-badge](https://img.shields.io/badge/License-MIT-yellow.svg)
 
+---
+
 ## 📚 Table of Contents
 - 📝 [Description](#description)  
 - 💾 [Installation](#installation)  
