@@ -1,35 +1,22 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// Function to generate markdown for README
 function renderLicenseBadge(license) {
-  if (license === "Apache License 2.0") {
-    return `![License: Apache](https://img.shields.io/badge/License-Apache%202.0-blue.svg)(https://opensource.org/licenses/Apache-2.0)`;
-  } else if (license === "MIT") {
-    return `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https://opensource.org/licenses/MIT)`;
-  } else if (license === "GPL 3.0") {
-    return `![License: GPL](https://img.shields.io/badge/License-GPL%20v3-blue.svg)(https://opensource.org/licenses/GPL-3.0)`;
-  } else if (license === "BSD 3-Clause") {
-    return `![License: BSD](https://img.shields.io/badge/License-BSD%203--Clause-orange.svg)(https://opensource.org/licenses/BSD-3-Clause)`;
-  } else if (license === "none") {
-    return '';
-  }
-  return '';
+  const badges = {
+    "Apache License 2.0": `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`,
+    "MIT License": `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`,
+    "GPL 3.0": `[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`,
+    "BSD 3-Clause": `[![License: BSD](https://img.shields.io/badge/License-BSD%203--Clause-orange.svg)](https://opensource.org/licenses/BSD-3-Clause)`,
+  };
+
+  return badges[license] || '';
 }
 
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if (!license || license === "none") {
-    return '';
-  }
+  if (!license || license === "none") return '';
   return `## License
 
-This project is licensed under the ${license} license.`;
+This project is licensed under the ${license}.`;
 }
 
-
-
-// TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
 ${renderLicenseBadge(data.license)}
@@ -38,12 +25,12 @@ ${renderLicenseBadge(data.license)}
 ${data.description}
 
 ## Table of Contents
-1.[Installation](#installation)
-2.[Usage](#usage)
-3.[License](#license)
-4.[Contributing](#contributing)
-5.[Tests](#tests)
-6.[Questions](#questions)
+1. [Installation](#installation)  
+2. [Usage](#usage)  
+3. [License](#license)  
+4. [Contributing](#contributors)  
+5. [Tests](#tests)  
+6. [Questions](#questions)  
 
 ## Installation
 ${data.installation}
@@ -51,7 +38,6 @@ ${data.installation}
 ## Usage
 ${data.usage}
 
-## License
 ${renderLicenseSection(data.license)}
 
 ## Contributors
@@ -60,13 +46,10 @@ ${data.contribution}
 ## Tests
 ${data.tests}
 
-
 ## Questions
--Github: [${data.username}](https://github.com/${data.username})
--Email:[${data.email}](mailto:${data.email})
+GitHub: [${data.username}](https://github.com/${data.username})  
+Email: [${data.email}](mailto:${data.email})
 `;
 }
 
-export default generateMarkdown;//resolves syntax error
-
-// Used Xpert Learning to assist with code 
+export default generateMarkdown;

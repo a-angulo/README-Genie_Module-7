@@ -43,7 +43,7 @@ To test the magic:
 2. 💻 Run `npm install` to install the Inquirer module  
 3. 🧞‍♂️ Execute the command `node index.js` and watch the README appear like magic!
 
-📹 Need a guide? Check out this [walkthrough](insert link)!
+📹 Need a guide? Check out this [walkthrough](https://app.screencastify.com/v2/manage/videos/Vi3gIUufNBKn5E4WHdKZ)!
 
 ---
 
